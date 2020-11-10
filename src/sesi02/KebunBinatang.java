@@ -10,7 +10,16 @@ package sesi02;
  * @author HERIADIE
  */
 public class KebunBinatang {
+    
+    public KebunBinatang(String nama){
+        System.out.println("Kebun binatang " + nama);
+    }
 
+    public KebunBinatang(String nama , int jumlahPengunjungMax){
+        System.out.println("Kebun binatang "+ nama +"jumlah Pengunjung max " + jumlahPengunjungMax);
+        
+    }
+    
     public static void main(String[] args) {
 
         Mamalia hewan = new Mamalia();
