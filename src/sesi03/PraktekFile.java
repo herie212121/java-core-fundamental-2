@@ -13,26 +13,32 @@ import sesi02.KebunBinatang;
  * @author HERIADIE
  */
 public class PraktekFile {
+
     public static void main(String[] args) {
-        
-        File target = new File ("folderA");
-        String satuan[] = target.list();
-        
-        for (String isi: satuan){
-            System.out.println("ditemuakan file " + isi);
+
+        File target = new File("folderArr");
+
+        try {
+            String satuan[] = target.list();
+
+            for (String isi : satuan) {
+                System.out.println(isi);
+            }
+
+        } catch (Exception ex) {
+
+            System.out.println("file tidak ditemukan");
+
         }
-        
-        File target1 = new File ("folderA");
+        File target1 = new File("folderA");
         File satuan1[] = target1.listFiles();
-        
-        for (File isi: satuan1){
+
+        for (File isi : satuan1) {
             System.out.println("ditemuakan file  " + isi.toString());
         }
-        
-        
-          
+
 //        KebunBinatang eksekusi = new KebunBinatang("Bandung", 100 );
 //        KebunBinatang eksekusi2 = new KebunBinatang("Bogor");
-     }
-    
+    }
+
 }
